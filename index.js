@@ -11,7 +11,7 @@ app.use(cors)
 const cars = require('./cars.json');
 
 //get all cars
-app.get('/cars', (req, res) => {
+app.get('./cars', (req, res) => {
     res.json(cars);
 });
 
